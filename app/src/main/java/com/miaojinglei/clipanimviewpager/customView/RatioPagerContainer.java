@@ -10,6 +10,10 @@ import android.widget.FrameLayout;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+/**
+ * 此类去除ViewPager中的左右到底效果
+ * 加上之后会影响部分性能
+ */
 public class RatioPagerContainer extends FrameLayout implements ViewPager.OnPageChangeListener {
     private ViewPager mPager;
     boolean mNeedsRedraw = false;
