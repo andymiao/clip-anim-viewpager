@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@color/light_green"
+    tools:context="com.miaojinglei.clipanimviewpager.MainActivity">
+    <com.miaojinglei.clipanimviewpager.customView.ColorAnimationView
+        android:id="@+id/colorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="ClipViewPagerDemo"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/pagerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:clipChildren="false"
+        android:layout_marginTop="10dp">
+
+        <com.miaojinglei.clipanimviewpager.customView.ClipViewPager
+            android:id="@+id/viewPager"
+            android:layout_gravity="center_horizontal"
+            android:clipChildren="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>

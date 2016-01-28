@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:lineSpacingExtra="0dp"
+            android:text="标题"
+            android:textColor="@color/title_color"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/titleTv"
+            android:layout_alignRight="@+id/titleTv"
+            android:layout_below="@+id/titleTv"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:text="副标题"
+            android:textColor="@color/sub_title_color"
+            android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/topLayout"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/picIv"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_info_titlebg"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/desctitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/imageLayout"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/des_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="主要训练部位" />
+        <TextView
+            android:id="@+id/descTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/desctitleTv"
+            android:textColor="@color/des_color"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="描述" />
+    </RelativeLayout>
+</RelativeLayout>
